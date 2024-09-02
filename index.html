@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi step form</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/2e4ad56e77.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="selection">
+        <div class="selection1">
+          <p class="selection-number">1</p>
+          <div class="selection_text">
+            <p>Step 1</p>
+            <h5>YOUR INFO</h5>
+          </div>
+        </div>
+
+        <div class="selection2">
+          <p class="selection-number">2</p>
+          <div class="selection_text">
+            <p>step 2</p>
+            <h5>SELECT PLAN</h5>
+          </div>
+        </div>
+
+        <div class="selection3">
+          <p class="selection-number">3</p>
+          <div class="selection_text">
+            <p>step 3</p>
+            <h5>ADD-ONS</h5>
+          </div>
+        </div>
+
+        <div class="selection4">
+          <p class="selection-number">4</p>
+          <div class="selection_text">
+            <p>step 4</p>
+            <h5>SUMMARY</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <form class="form" id="myForm">
+        <div class="content">
+          <h1 class="content-h">Personal Info</h1>
+          <p class="content-p">
+            Please provide your name, email address, and phone number
+          </p>
+
+          <div class="error-div">
+            <p class="content-pp">Name</p>
+            <p class="error" id="nameError">This field is required</p>
+          </div>
+          <input
+            class="name"
+            type="text"
+            id="name"
+            placeholder="e.g Stephen King"
+          />
+
+          <div class="error-div">
+            <p class="content-pp">Email Address</p>
+            <p class="error" id="emailError">This field is required</p>
+          </div>
+          <input
+            class="email"
+            type="email"
+            id="email"
+            placeholder="stephenking@lorem.com"
+          />
+
+          <div class="error-div">
+            <p class="content-pp">Phone Number</p>
+            <p class="error" id="phoneError">This field is required</p>
+          </div>
+          <input
+            class="number"
+            type="tel"
+            id="phone"
+            placeholder="e.g +1 234 567 890"
+          />
+          <br />
+          <button type="submit" class="content-btn">Next Step</button>
+        </div>
+      </form>
+      <!-- plan -->
+      <section class="plan">
+        <h1 class="content-h">Select your plan</h1>
+        <p class="content-p">You have the option of month or yearly billing.</p>
+
+        <div class="plan-flex">
+          <div class="Arcade">
+            <img src="images/icon-arcade.svg" alt="" srcset="" />
+            <div>
+              <h4>Arcade</h4>
+              <p class="plan-p">$90/yr</p>
+            </div>
+          </div>
+
+          <div class="Advanced">
+            <img src="images/icon-advanced.svg" alt="" srcset="" />
+            <div>
+              <h4>Advance</h4>
+              <p class="plan-p">$120/yr</p>
+            </div>
+          </div>
+
+          <div class="pro">
+            <img src="images/icon-pro.svg" alt="" srcset="" />
+            <div>
+              <h4>Pro</h4>
+              <p class="plan-p">$120/yr</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="switch">
+          <p class="monthly-active">Monthly</p>
+          <label class="switcher">
+            <input type="checkbox" name="" id="" />
+            <span class="slider round"></span>
+          </label>
+          <p class="yearly">Yearly</p>
+        </div>
+
+        <div class="plan-btn">
+          <h3 class="plan-h">Go back</h3>
+          <button class="plan-btnx">Next Step</button>
+        </div>
+      </section>
+
+      <!-- Pick add on -->
+      <section class="add-on">
+        <h1 class="content-h">Pick add-ons</h1>
+        <p class="content-p">Add-ons help enhance your gaming experience.</p>
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+
+          <div class="add-on-text">
+            <div class="add-on-textt">
+              <h4>Online service</h4>
+              <p>Access to multiplayer games</p>
+            </div>
+            <p class="price">+$1/mo</p>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+          <div class="add-on-text">
+            <div class="add-on-textt">
+              <h4>Larger storage</h4>
+              <p>Extra 1TB of cloud save</p>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id="" />
+          <div class="add-on-text">
+            <div class="add-on-textt">
+              <h4>Customizable Profile</h4>
+              <p>Custom theme on your profile</p>
+            </div>
+            <p class="price">+$2/mo</p>
+          </div>
+        </div>
+
+        <div class="checkbox-btn">
+          <h3>Go back</h3>
+          <button class="plan-btnx">Next Step</button>
+        </div>
+      </section>
+
+      <!-- Finishing Up -->
+
+      <section class="finishing-up">
+        <h1 class="content-h">Finishing up</h1>
+        <p class="content-p">
+          Double-check everything looks OK before confirming.
+        </p>
+
+        <div class="finishing-up-container">
+          <div class="container1">
+            <div>
+              <h4 class="arc-header">Arcade (Monthly)</h4>
+              <p class="arc-p">change</p>
+            </div>
+            <p class="finish-price">$9/mo</p>
+          </div>
+          <hr />
+
+          <div class="finishing-up-container">
+            <div class="container2">
+              <div>
+                <p class="arc-pp">Online services</p>
+                <p class="arc-pp">Larger storage</p>
+              </div>
+              <div>
+                <p class="finish-price">+$1/mo</p>
+                <p class="finish-price">+$2/mo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="f-price">
+          <p class="arc-pp">Total <span>(per month)</span></p>
+          <p class="total">+$12/mo</p>
+        </div>
+
+        <div class="checkbox-btn">
+          <h3>Go back</h3>
+          <button class="plan-btnx">Next Step</button>
+        </div>
+      </section>
+
+      <section class="thanks">
+        <img src="./images/icon-thank-you.svg" alt="" />
+        <h1 class="content-h">Thank you!</h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have <br />
+          fun using our platform. If you ever need support, please feel free to
+          email us at support@loremgaming.com.
+        </p>
+      </section>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>
