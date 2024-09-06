@@ -12,43 +12,44 @@
     ></script>
   </head>
   <body>
-    <section class="main">
+    <section class="all">
       <div class="selection">
-        <div class="selection1">
-          <p class="selection-number">1</p>
-          <div class="selection_text">
-            <p>Step 1</p>
-            <h5>YOUR INFO</h5>
+        <div class="all-selection">
+          <div class="selection1">
+            <p class="selection-number">1</p>
+            <div class="selection_text">
+              <p>Step 1</p>
+              <h5>YOUR INFO</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="selection2">
-          <p class="selection-number">2</p>
-          <div class="selection_text">
-            <p>step 2</p>
-            <h5>SELECT PLAN</h5>
+          <div class="selection2">
+            <p class="selection-number">2</p>
+            <div class="selection_text">
+              <p>step 2</p>
+              <h5>SELECT PLAN</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="selection3">
-          <p class="selection-number">3</p>
-          <div class="selection_text">
-            <p>step 3</p>
-            <h5>ADD-ONS</h5>
+          <div class="selection3">
+            <p class="selection-number">3</p>
+            <div class="selection_text">
+              <p>step 3</p>
+              <h5>ADD-ONS</h5>
+            </div>
           </div>
-        </div>
 
-        <div class="selection4">
-          <p class="selection-number">4</p>
-          <div class="selection_text">
-            <p>step 4</p>
-            <h5>SUMMARY</h5>
+          <div class="selection4">
+            <p class="selection-number">4</p>
+            <div class="selection_text">
+              <p>step 4</p>
+              <h5>SUMMARY</h5>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- content -->
-      <form class="form" id="myForm">
+      <!-- form content -->
+      <form class="" action="">
         <div class="content">
           <h1 class="content-h">Personal Info</h1>
           <p class="content-p">
@@ -87,12 +88,14 @@
             id="phone"
             placeholder="e.g +1 234 567 890"
           />
-          <br />
-          <button type="submit" class="content-btn">Next Step</button>
+          <div class="btn-container">
+            <button type="submit" class="content-btn">Next Step</button>
+          </div>
         </div>
       </form>
+
       <!-- plan -->
-      <section class="plan">
+      <section class="plan hidden">
         <h1 class="content-h">Select your plan</h1>
         <p class="content-p">You have the option of month or yearly billing.</p>
 
@@ -100,24 +103,24 @@
           <div class="Arcade">
             <img src="images/icon-arcade.svg" alt="" srcset="" />
             <div>
-              <h4>Arcade</h4>
-              <p class="plan-p">$90/yr</p>
+              <h4 class="plan-h">Arcade</h4>
+              <p class="plan-p">$9/mo</p>
             </div>
           </div>
 
           <div class="Advanced">
             <img src="images/icon-advanced.svg" alt="" srcset="" />
             <div>
-              <h4>Advance</h4>
-              <p class="plan-p">$120/yr</p>
+              <h4 class="plan-h">Advance</h4>
+              <p class="plan-p">$12/mo</p>
             </div>
           </div>
 
           <div class="pro">
             <img src="images/icon-pro.svg" alt="" srcset="" />
             <div>
-              <h4>Pro</h4>
-              <p class="plan-p">$120/yr</p>
+              <h4 class="plan-h">Pro</h4>
+              <p class="plan-p">$15/mo</p>
             </div>
           </div>
         </div>
@@ -132,24 +135,23 @@
         </div>
 
         <div class="plan-btn">
-          <h3 class="plan-h">Go back</h3>
+          <h3 class="plan-btnh">Go back</h3>
           <button class="plan-btnx">Next Step</button>
         </div>
       </section>
 
       <!-- Pick add on -->
-      <section class="add-on">
+      <section class="add-on hidden">
         <h1 class="content-h">Pick add-ons</h1>
         <p class="content-p">Add-ons help enhance your gaming experience.</p>
 
         <div class="checkbox">
           <input type="checkbox" name="" id="" />
-
           <div class="add-on-text">
-            <div class="add-on-textt">
-              <h4>Online service</h4>
-              <p>Access to multiplayer games</p>
-            </div>
+            <h4>Online service</h4>
+            <p>Access to multiplayer games</p>
+          </div>
+          <div class="add-on-textt">
             <p class="price">+$1/mo</p>
           </div>
         </div>
@@ -157,21 +159,21 @@
         <div class="checkbox">
           <input type="checkbox" name="" id="" />
           <div class="add-on-text">
-            <div class="add-on-textt">
-              <h4>Larger storage</h4>
-              <p>Extra 1TB of cloud save</p>
-            </div>
-            <p class="price">+$2/mo</p>
+            <h4>Larger storage</h4>
+            <p>Extra 1TB of cloud save</p>
+          </div>
+          <div class="add-on-textt">
+            <p class="price">+$1/mo</p>
           </div>
         </div>
 
         <div class="checkbox">
           <input type="checkbox" name="" id="" />
           <div class="add-on-text">
-            <div class="add-on-textt">
-              <h4>Customizable Profile</h4>
-              <p>Custom theme on your profile</p>
-            </div>
+            <h4>Customizable Profile</h4>
+            <p>Custom theme on your profile</p>
+          </div>
+          <div class="add-on-textt">
             <p class="price">+$2/mo</p>
           </div>
         </div>
@@ -184,7 +186,7 @@
 
       <!-- Finishing Up -->
 
-      <section class="finishing-up">
+      <section class="finishing-up hidden">
         <h1 class="content-h">Finishing up</h1>
         <p class="content-p">
           Double-check everything looks OK before confirming.
@@ -218,22 +220,23 @@
           <p class="total">+$12/mo</p>
         </div>
 
-        <div class="checkbox-btn">
+        <div class="finish-btn">
           <h3>Go back</h3>
-          <button class="plan-btnx">Next Step</button>
+          <button class="finish-btnx">Next Step</button>
         </div>
       </section>
 
-      <section class="thanks">
+      <!-- Thanks -->
+      <section class="thanks hidden">
         <img src="./images/icon-thank-you.svg" alt="" />
         <h1 class="content-h">Thank you!</h1>
         <p>
           Thanks for confirming your subscription! We hope you have <br />
-          fun using our platform. If you ever need support, please feel free to
-          email us at support@loremgaming.com.
+          fun using our platform. If you ever need support, please feel
+          <br />free to email us at support@loremgaming.com.
         </p>
       </section>
     </section>
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
